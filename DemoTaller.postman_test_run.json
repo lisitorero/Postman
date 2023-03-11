@@ -1,0 +1,121 @@
+{
+	"id": "41fde5cd-84aa-4228-9ab6-a7df9f5ed7fe",
+	"name": "DemoTaller",
+	"timestamp": "2023-03-10T01:18:04.425Z",
+	"collection_id": "0-d756ed69-6bdc-4a76-be60-b4fc9f27b9bc",
+	"folder_id": 0,
+	"environment_id": "84f640dd-c9df-42b1-afa1-f1ad8184603a",
+	"totalPass": 1,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "0d05770d-bb31-41bb-ad04-07b6ac8726d4",
+			"name": "Caso Positivo: Crear un token correcto",
+			"url": "https://restful-booker.herokuapp.com/auth",
+			"time": 415,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validando el còdigo de respuesta con valor 200": true,
+				"Validando la longitud del token dando 15": false
+			},
+			"testPassFailCounts": {
+				"Validando el còdigo de respuesta con valor 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validando la longitud del token dando 15": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				415
+			],
+			"allTests": [
+				{
+					"Validando el còdigo de respuesta con valor 200": true,
+					"Validando la longitud del token dando 15": false
+				}
+			]
+		},
+		{
+			"id": "3c0b89c0-f847-4af8-9fdc-27e91101535e",
+			"name": "Caso negativo: Username con valor NULL",
+			"url": "https://restful-booker.herokuapp.com/auth",
+			"time": 191,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				191
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "20e190d2-8a91-4d01-8677-e12638aed459",
+			"name": "Caso Negativo: Omitiendo el valor username",
+			"url": "https://restful-booker.herokuapp.com/auth",
+			"time": 121,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				121
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "0ad5f006-2cb9-40da-a20a-3dcddad5bc70",
+			"name": "Caso Negativo: Omitir el valor password",
+			"url": "https://restful-booker.herokuapp.com/auth",
+			"time": 109,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				109
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 836,
+	"collection": {
+		"requests": [
+			{
+				"id": "0d05770d-bb31-41bb-ad04-07b6ac8726d4",
+				"method": "POST"
+			},
+			{
+				"id": "3c0b89c0-f847-4af8-9fdc-27e91101535e",
+				"method": "POST"
+			},
+			{
+				"id": "20e190d2-8a91-4d01-8677-e12638aed459",
+				"method": "POST"
+			},
+			{
+				"id": "0ad5f006-2cb9-40da-a20a-3dcddad5bc70",
+				"method": "POST"
+			}
+		]
+	}
+}
